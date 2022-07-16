@@ -4,8 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="排序">
+    <meta name="description" content="常见排序
+冒泡排序
+相邻的两个数比较，如果arr[i]&amp;gt;arr[i+1],就交换两个数的位置，只需要循环n-1次，内部比较交换n-1-i次
+
+public static void sort(int[] arr) &amp;#123;
+    ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +24,7 @@
 
     
 
-    <title>Hello World | Hexo</title>
+    <title>常见排序算法 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +314,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">常见排序算法</h1>
                 </div>
             </div>
         </div>
@@ -428,12 +433,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                算法
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -442,7 +460,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-15
+                    2022-07-16
                 </div>
                 
 
@@ -463,19 +481,77 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h2 id="常见排序"><a href="#常见排序" class="headerlink" title="常见排序"></a><strong>常见排序</strong></h2><ul>
+<li><h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a><strong>冒泡排序</strong></h4></li>
+<li><p>相邻的两个数比较，如果arr[i]&gt;arr[i+1],就交换两个数的位置，只需要循环n-1次，内部比较交换n-1-i次</p>
+</li>
+<li><pre><code class="java">public static void sort(int[] arr) &#123;
+     for (int i = 0; i &lt; arr.length-1; i++) &#123;
+         for (int j = 0; j &lt; arr.length - 1 - i; j++) &#123;
+             if (arr[j] &gt; arr[j + 1]) &#123;
+                 int temp = arr[j];
+                 arr[j] = arr[j + 1];
+                 arr[j + 1] = temp;
+             &#125;
+         &#125;
+     &#125;
+ &#125;
+  
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 优化：定义一个flag标记，如果是有序的就不用冒泡了，直接break；</span><br><span class="line"></span><br><span class="line">- #### **选择排序**</span><br><span class="line"></span><br><span class="line">- 定义一个min，minIndex，从数组的第arr[i]个数,依次和其后面的数比较，较小的那个赋值给min，下标赋值给minIndex，然后两个数位置交换，arr[minIndex]=arr[i],arr[i]=min</span><br><span class="line"></span><br><span class="line">- ```java</span><br><span class="line">      public static void select(int[] arr) &#123;</span><br><span class="line">          for (int i = 0; i &lt; arr.length - 1; i++) &#123;</span><br><span class="line">              int min = arr[i];</span><br><span class="line">              int minIndex = i;</span><br><span class="line">              for (int j = i + 1; j &lt; arr.length; j++) &#123;</span><br><span class="line">                  if (min &gt; arr[j]) &#123;</span><br><span class="line">                      min = arr[j];</span><br><span class="line">                      minIndex = j;</span><br><span class="line">                  &#125;</span><br><span class="line">              &#125;</span><br><span class="line">              if (i != minIndex) &#123;</span><br><span class="line">                  arr[minIndex] = arr[i];</span><br><span class="line">                  arr[i] = min;</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><h4 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a><strong>插入排序</strong></h4></li>
+<li><p>从数组的第二个数开始插入，定义Index记录当前要插入的数的下标，value记录当前的值。</p>
+</li>
+<li><p>如果这个数比前一个数小则将这个数的位置的值赋值为前一个数 arr[insertIndex] &#x3D; arr[insertIndex - 1]，下标减1。依次进行插入。最后将记录的当前value值赋给最后插入的位置。</p>
+</li>
+<li><pre><code class="java">public static void insert(int[] arr) &#123;
+      for (int i = 1; i &lt; arr.length; i++) &#123;
+          int insertIndex = i;
+          int insertValue = arr[i];
+          while (insertIndex &gt; 0 &amp;&amp; insertValue &lt; arr[insertIndex - 1]) &#123;
+              arr[insertIndex] = arr[insertIndex - 1];
+              insertIndex--;
+          &#125;
+          arr[insertIndex] = insertValue;
+      &#125;
+  &#125;
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- #### **希尔排序**</span><br><span class="line"></span><br><span class="line">- 就是插入排序，原理一样，只是多了一个步长，跳着比较，不是挨着一个一个插入</span><br><span class="line"></span><br><span class="line">- ```java</span><br><span class="line">      public static void shell(int[] arr) &#123;</span><br><span class="line">          //步长gap</span><br><span class="line">          for (int gap = arr.length / 2; gap &gt; 0; gap /= 2) &#123;</span><br><span class="line">              for (int i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">                  int insertIndex = i;</span><br><span class="line">                  int insertValue = arr[i];</span><br><span class="line">                  while (insertIndex - gap &gt;= 0 &amp;&amp; insertValue &lt; arr[insertIndex - gap]) &#123;</span><br><span class="line">                      arr[insertIndex] = arr[insertIndex - gap];</span><br><span class="line">                      insertIndex -= gap;</span><br><span class="line">                  &#125;</span><br><span class="line">                  arr[insertIndex] = insertValue;</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a><strong>快速排序</strong></h4></li>
+<li><p>定义两个指针l和r，首先保证最右边的数大于最左边的数，先移动右边的指针，直到arr[r]小于左边的数，再移动左边的指针，直到arr[l]大于最左边的数，即保证右边的所有数都大于最左边，左边的数都小于左边。最后l指针和r指针移到同一位置时，交换该位置和最左边那个数，如果两个指针不在同一位置就交换这两个位置，再递归再次快速排序</p>
+</li>
+<li><pre><code class="java">public static void quick(int[] arr, int left, int right) &#123;
+     if (left &gt;= right) &#123;
+         return;
+     &#125;
+     int l = left;
+     int r = right;
+     while (l &lt; r) &#123;
+         //先右边指针移动
+         while (l &lt; r &amp;&amp; arr[r] &gt;= arr[left]) &#123;
+             r--;
+         &#125;
+         while (l &lt; r &amp;&amp; arr[l] &lt;= arr[left]) &#123;
+             l++;
+         &#125;
+         if (l == r) &#123;
+             int temp = arr[r];
+             arr[r] = arr[left];
+             arr[left] = temp;
+         &#125; else &#123;
+             int temp = arr[r];
+             arr[r] = arr[l];
+             arr[l] = temp;
+         &#125;
+     &#125;
+     quick(arr, left, l - 1);
+     quick(arr, r + 1, right);
+ &#125;
+</code></pre>
+</li>
+</ul>
 
                 
             </div>
@@ -502,7 +578,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/07/15/hello-world/">http://example.com/2022/07/15/hello-world/</a>
+                    <a href="http://example.com/2022/07/16/%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">http://example.com/2022/07/16/%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -539,7 +615,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -711,9 +791,60 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/07/16/%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="常见排序算法">
+                        
+                        <span class="card-title">常见排序算法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/07/16/%E5%85%B3%E4%BA%8EJVM/">
                     <div class="card-image">
@@ -731,45 +862,8 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-16
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/07/15/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-16
                             </span>
                         <span class="publish-author">
                             
@@ -779,7 +873,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
